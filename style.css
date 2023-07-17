@@ -31,8 +31,11 @@ nav li a {
   text-decoration: none;
   color: #424242;
 }
-.banner{
- text-align: center;
+
+/* Banner Style */
+
+.banner {
+  text-align: center;
 }
 .banner-contain {
   text-align: center;
@@ -50,12 +53,40 @@ nav li a {
   text-align: center;
   font-size: 1rem;
   font-weight: 400;
-  line-height: 26px; /* 162.5% */
+  margin-bottom: 40px;
 }
-.btn-primary{
+.btn-primary {
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 20px 25px;
+  width: 180px;
+  height: 64px;
+  background: #ff900e;
+  border: 0;
+  cursor: pointer;
+}
+.banner-image {
+  width: 100%;
+  margin: 45px auto;
+}
 
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+  nav {
+    flex-direction: column;
+  }
+  header {
+    padding: 10px;
+  }
 }
-.banner-image{
- width: 100%;
- margin: 45px auto;
+
+/* Tablet or medium devices */
+
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  header {
+    padding: 0px;
+  }
 }
