@@ -77,6 +77,7 @@ nav li a {
 main {
   max-width: 1240px;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 /* feature section */
@@ -120,11 +121,20 @@ main {
 
 /* Mobile devices */
 @media screen and (max-width: 576px) {
-  nav {
+  nav,
+  .team-feature-container
+   {
     flex-direction: column;
   }
   header {
     padding: 10px;
+  }
+  .team-feature-image{
+    grid-template-columns: 1fr;
+  }
+  .team-feature-contain{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
@@ -133,5 +143,8 @@ main {
 @media screen and (min-width: 576px) and (max-width: 960px) {
   header {
     padding: 0px;
+  }
+  .team-feature-container{
+    flex-direction: column;
   }
 }
